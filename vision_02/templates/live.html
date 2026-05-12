@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live View</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="header">Vision Analytics</div>
+
+<div class="live-wrapper">
+
+    <!-- CAMERA -->
+    <div class="live-camera">
+        <img src="/video">
+    </div>
+
+    <!-- FACE INFO -->
+    <div class="live-info">
+        <h3>Detected Faces</h3>
+        <ul id="liveList"></ul>
+    </div>
+
+</div>
+
+<script>
+setInterval(async ()=>{
+    let res = await fetch('/live_data');
+    let data = await res.json();
+
+    let list = document.getElementById("liveList");
+    list.innerHTML = "";
+
+    data.data.forEach(i=>{
+        let li = document.createElement("li");
+        li.innerText = i;
+        list.appendChild(li);
+    });
+}, 800);
+</script>
+
+</body>
+</html>

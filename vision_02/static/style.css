@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0f1c;
+    color: #e2e8f0;
+}
+
+/* CENTER */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.06);
+    padding: 40px;
+    border-radius: 14px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 0 30px rgba(0, 140, 255, 0.2);
+}
+
+/* HEADER */
+.header {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+/* BUTTON */
+button, .btn {
+    padding: 14px 26px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+button:hover, .btn:hover {
+    background: #3b82f6;
+}
+
+/* INPUT */
+input {
+    width: 95%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+}
+
+/* DASHBOARD */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* PANELS */
+.panel {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* LEFT */
+.left {
+    width: 520px;
+    text-align: center;
+}
+
+/* RIGHT */
+.right {
+    width: 320px;
+    height: 500px;
+    overflow-y: auto;
+    font-size: 15px;
+}
+
+/* IMAGE */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* LIVE */
+.live {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.live img {
+    width: 720px;
+}
+
+.live-side {
+    width: 320px;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+/* LIVE PAGE FIX */
+.live-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+/* CAMERA BIGGER */
+.live-camera {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.live-camera img {
+    width: 100%;
+    max-width: 900px;   /* bigger camera */
+    border-radius: 12px;
+}
+
+/* SIDE PANEL */
+.live-info {
+    flex: 1;
+    max-width: 320px;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 12px;
+    height: 520px;
+    overflow-y: auto;
+}

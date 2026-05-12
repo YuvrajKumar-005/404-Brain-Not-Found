@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/static/style.css">
+
+<div class="header">Vision Analytics</div>
+
+<div class="dashboard">
+
+<div class="panel left">
+<form action="/upload" method="post" enctype="multipart/form-data">
+<input type="file" name="image">
+<button>Upload</button>
+</form>
+
+<a href="/camera" class="btn">Camera</a>
+<a href="/live" class="btn">Live</a>
+
+{% if image %}
+<img src="{{ image }}">
+{% endif %}
+{% if graph %}
+<img src="{{ graph }}">
+{% endif %}
+
+</div>
+
+{% if info %}
+<div class="panel right">
+<ul>
+{% for i in info %}
+<li>{{ i }}</li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+
+</div>
