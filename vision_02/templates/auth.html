@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/static/style.css">
+
+<div class="center">
+<div class="card">
+
+<div class="header">Vision Analytics</div>
+
+<button onclick="showSignup()">Sign Up</button>
+<button onclick="showLogin()">Login</button>
+
+<div id="signup" style="display:none;">
+<form action="/signup" method="post">
+<input type="email" name="email" placeholder="Gmail">
+<input type="password" name="password" placeholder="Password">
+<button>Create Account</button>
+</form>
+</div>
+
+<div id="login" style="display:none;">
+<form action="/login" method="post">
+<input type="email" name="email" placeholder="Gmail">
+<input type="password" name="password" placeholder="Password">
+<button>Login</button>
+</form>
+</div>
+
+</div>
+</div>
+
+<script>
+function showSignup(){signup.style.display="block";login.style.display="none";}
+function showLogin(){login.style.display="block";signup.style.display="none";}
+</script>
